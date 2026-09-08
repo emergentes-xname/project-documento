@@ -323,6 +323,52 @@ El servicio de monitoreo de infraestructura en las cadenas de comida rápida en 
 
 ## 1.3. Segmentos objetivo
 
+**Segmento objetivo #1: Trabajadores del Local (Staff Operativo y de Limpieza)**
+
+- **Descripción:** Jóvenes operarios encargados de la cocina, atención en caja, despacho de pedidos y tareas de mantenimiento/limpieza de turnos en restaurantes de comida rápida en Lima Metropolitana.
+  
+- **Aspectos demográficos:**
+  - Sexo: Masculino y Femenino.
+  - Edades: Entre 18 y 28 años (muchos combinan estudios universitarios/técnicos con trabajo a tiempo parcial o completo).
+  - Nivel socioeconómico: C y B.
+    
+- **Aspectos geográficos:** Residentes en Lima Metropolitana, que desempeñan sus labores en locales de comida rápida situados en avenidas principales, patios de comidas en centros comerciales o locales de vía pública.
+
+- **Aspectos psicográficos:**
+  - Realizan sus labores en entornos de alta velocidad y presión constante.
+  - Poseen pocos o nulos conocimientos técnicos sobre electricidad o mantenimiento industrial.
+  - Buscan garantías de seguridad para desempeñar sus labores sin poner en peligro su integridad física al manipular agua, mopas o artefactos de alto voltaje.
+
+- **Necesidades clave:**
+  - Conocer de manera clara e inmediata si un equipo es seguro de tocar o limpiar (por ejemplo, antes del baldeado o trapeado de la cocina).
+  - Contar con una vía simple de notificación para reportar anomalías o ruidos extraños en los equipos sin descuidar sus tareas de atención.
+  - Disponer de entornos laborales seguros donde no corran riesgos de electrocución o quemaduras.
+
+- **Sustento estadístico:** El sector de comida rápida en Lima Metropolitana es uno de los mayores empleadores de jóvenes técnicos y universitarios en el país. De acuerdo con informes y registros de la Superintendencia Nacional de Fiscalización Laboral (SUNAFIL), las deficiencias en las condiciones de seguridad e higiene industrial en cocinas comerciales constituyen uno de los principales motivos de inspección, siendo las fallas mecánicas y descargas eléctricas en zonas operativas los eventos con mayor potencial de lesiones graves o fatalidades.
+
+**Segmento objetivo #2: Manager del Local (Administrador / Jefe de Tienda)**
+
+- **Descripción:** Profesional a cargo de la gestión de la tienda, responsable del cumplimiento de las metas de venta, la seguridad e higiene (SST), el control de costos operativos y el mantenimiento técnico de la infraestructura.
+  
+- **Aspectos demográficos:**
+  - Cargos: Store Manager, Administrador de Local, Supervisor de Turno, Jefe de SST.
+  - Edades: Entre 25 y 50 años.
+  - Nivel socioeconómico: B y A.
+
+- **Aspectos geográficos:** Encargados de establecimientos de comida rápida en Lima Metropolitana.
+
+- **Aspectos psicográficos:**
+  - Orientados al cumplimiento estricto de KPIs de servicio, presupuestos de mantenimiento y normativas legales/laborales (SUNAFIL, OSINERGMIN, INDECI e Inspecciones Municipales).
+  - Buscan evitar a toda costa contingencias que afecten la imagen de la marca, clausuras temporales/definitivas o demandas legales por negligencia.
+  - Valoran los datos centralizados para coordinar de forma preventiva con los equipos de mantenimiento corporativo.
+  
+- **Necesidades clave:**
+  - Garantizar un ambiente de trabajo 100% seguro contra riesgos eléctricos para todo su personal.
+  - Disponer de visibilidad del consumo energético por máquina para controlar costos y reducir la factura de energía.
+  - Programar mantenimientos predictivos evitando que las cocinas, congeladoras o freidoras se malogren en horas de alta demanda o generen mermas de insumos.
+  
+- **Sustento estadístico:** En Lima Metropolitana operan más de 1,200 locales pertenecientes a cadenas y franquicias de comida rápida (hamburgueserías, pollerías, pizzerías). Según reportes del sector retail y gastronómico, los costos asociados a servicios básicos y mantenimiento técnico representan entre el 15% y 20% de los gastos operativos mensuales de cada tienda, donde las ineficiencias de red pueden elevar la facturación hasta un 25% si no se detectan anomalías a tiempo. 
+
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
