@@ -207,7 +207,50 @@
 
 ## 2.2. Entrevistas
 
+
 ### 2.2.1. Diseño de entrevistas
+En esta sección se presenta el diseño de las entrevistas por segmento objetivo.
+
+**Segmento #1: Trabajadores de cadenas de comida rápida:**
+
+Perfil: personal operativo de cocina, caja, atención al cliente y apoyo en local (franquicias y locales propios), entre 18 y 35 años, que dependen directamente de equipos eléctricos (freidoras, hornos, refrigeradoras, POS, iluminación, extracción) para cumplir su turno.
+
+**Preguntas principales:**
+- ¿Cómo actúas cuando surge un problema eléctrico, como un corte de luz, una freidora o que deja de funcionar un horno?
+- ¿Qué tan rápido se atiende normalmente ese tipo de problemas en tu local?
+- ¿De qué manera una falla eléctrica afecta tu trabajo con relación a la atención al cliente, tiempos de entrega y seguridad?
+- ¿Has vivido alguna situación donde una instalación mal hecha o falta de mantenimiento haya causado un problema mayor en el local? ¿Cómo se resolvió?
+- ¿Con qué frecuencia ves que se hace mantenimiento preventivo a los equipos e instalaciones eléctricas de tu local?
+- ¿Qué importancia le das a que las reparaciones eléctricas del local cumplan normas de seguridad y cumplimiento normativo?
+- ¿Considerarías útil usar una plataforma que permita reportar rápido una falla y conectar con proveedores verificados para tu zona?
+- ¿Qué funcionalidades crees que harían esa plataforma útil para ti en el día a día (reporte en 1 clic, seguimiento en tiempo real, historial de fallas, chat con técnico)?
+
+**Preguntas complementarias:**
+- ¿Qué sueles hacer o buscar en internet cuando no sabes si una falla es eléctrica o del equipo?
+- ¿Cuánto confías en que tu reporte será atendido rápidamente por el encargado o un técnico?
+- ¿En qué momentos específicos del turno crees que sería más útil tener acceso a soporte eléctrico certificado (hora punta, cierre, apertura)?
+- ¿Te sentirías cómodo usando una aplicación para reportar fallas y agendar mantenimientos preventivos sin depender solo de WhatsApp o aviso verbal?
+
+**Segmento #2: Managers / Encargados de cadenas de comida rápida:**
+
+Perfil: shift managers, store managers y encargados de mantenimiento/operaciones de locales de cadenas de comida rápida, entre 22 y 50 años, responsables de la continuidad operativa, seguridad del local, gestión de proveedores y control de costos por downtime.
+
+**Preguntas principales:**
+- ¿Cómo está actualmente con la forma en que gestionas fallas y mantenimientos eléctricos en tu local?
+- ¿Qué haces normalmente cuando necesitas encontrar a alguien que repare o revise una instalación eléctrica del local?
+- ¿Qué tan fácil o difícil te resulta encontrar técnicos eléctricos certificados que atiendan con la rapidez que exige una cadena de comida rápida?
+- ¿Cuando has contratado un servicio eléctrico antes, ¿qué fue lo que más te preocupó (tiempo de inactividad, costo, seguridad alimentaria, cumplimiento normativo)?
+- ¿Qué cosas valoras más al contratar un proveedor para tu local (disponibilidad 24/7, certificación, garantía, precio, rapidez, facturación formal)?
+- ¿Con qué frecuencia realizas mantenimiento preventivo a tableros, cableado, refrigeración y equipos de cocina eléctrica?
+- ¿Te ha pasado que una instalación mal hecha haya causado pérdida de ventas, cierre temporal o riesgo sanitario? ¿Cómo lo resolviste?
+- ¿Estarías dispuesto a pagar una suscripción mensual si eso te garantiza proveedores verificados, atención prioritaria y monitoreo preventivo? ¿Por qué?
+- ¿Qué funcionalidades crees que te facilitarían la gestión desde una plataforma (panel multi-local, Acuerdo de Nivel de Servicio y tiempos de atención, calificaciones, pagos y facturación, historial y alertas preventivas)?
+
+**Preguntas complementarias:**
+- ¿Dónde buscas actualmente técnicos o proveedores (contactos de la cadena, Facebook, WhatsApp, proveedores corporativos)?
+- ¿Has probado plataformas para solicitar servicios de mantenimiento? ¿Cómo fue la experiencia?
+- ¿Qué herramientas digitales usas hoy para organizar mantenimientos y pedidos (Excel, WhatsApp, sistema interno de la franquicia)?
+- ¿Qué tan dispuesto estarías a formar parte de una red de locales y proveedores certificados con estándares comunes de seguridad eléctrica?
 
 ### 2.2.2. Registro de entrevistas
 
