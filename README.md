@@ -211,9 +211,7 @@
 ### 2.2.1. Diseño de entrevistas
 En esta sección se presenta el diseño de las entrevistas por segmento objetivo.
 
-**Segmento #1: Trabajadores de cadenas de comida rápida:**
-
-Perfil: personal operativo de cocina, caja, atención al cliente y apoyo en local (franquicias y locales propios), entre 18 y 35 años, que dependen directamente de equipos eléctricos (freidoras, hornos, refrigeradoras, POS, iluminación, extracción) para cumplir su turno.
+**Segmento #1: Trabajadores del Local (Staff Operativo y de Limpieza)**
 
 **Preguntas principales:**
 - ¿Cómo actúas cuando surge un problema eléctrico, como un corte de luz, una freidora o que deja de funcionar un horno?
@@ -231,9 +229,7 @@ Perfil: personal operativo de cocina, caja, atención al cliente y apoyo en loca
 - ¿En qué momentos específicos del turno crees que sería más útil tener acceso a soporte eléctrico certificado (hora punta, cierre, apertura)?
 - ¿Te sentirías cómodo usando una aplicación para reportar fallas y agendar mantenimientos preventivos sin depender solo de WhatsApp o aviso verbal?
 
-**Segmento #2: Managers / Encargados de cadenas de comida rápida:**
-
-Perfil: shift managers, store managers y encargados de mantenimiento/operaciones de locales de cadenas de comida rápida, entre 22 y 50 años, responsables de la continuidad operativa, seguridad del local, gestión de proveedores y control de costos por downtime.
+**Segmento #2: Manager del Local (Administrador / Jefe de Tienda)**
 
 **Preguntas principales:**
 - ¿Cómo está actualmente con la forma en que gestionas fallas y mantenimientos eléctricos en tu local?
