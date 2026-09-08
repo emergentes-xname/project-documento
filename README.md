@@ -303,6 +303,22 @@ El servicio de monitoreo de infraestructura en las cadenas de comida rápida en 
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
+- **Hipótesis 1: Sobre el Monitoreo Preventivo y la Seguridad Laboral.**
+  **Creemos que** la implementación de sensores IoT y alertas en tiempo real reduzca los accidentes laborales por descargas eléctricas y prevenga fallas críticas en los equipos de cocina.
+  **Sabremos que** estamos en lo cierto **cuando veamos** los siguientes comentarios del mercado: una reducción del 80% en las incidencias por sobrecalentamiento o fugas de corriente y un aumento del 40% en solicitudes de mantenimiento preventivo programado antes de que ocurra una falla crítica en un periodo de 6 meses.
+  
+- **Hipótesis 2: Sobre la Eficiencia Energética y Reducción de Costos.**
+  **Creemos que** proporcionar a los administradores un dashboard analítico con el desglose del consumo eléctrico en tiempo real por cada máquina incrementará la adopción de medidas de ahorro energético.
+  **Sabremos que** hemos tenido éxito **cuando veamos** una disminución de al menos un 12% en el costo total de la facturación eléctrica mensual en el 70% de los locales monitoreados durante su primer trimestre de uso.
+
+- **Hipótesis 3: Sobre la Valoración Operativa y Continuidad del Servicio.**
+  **Creemos que** los gerentes de operaciones preferirán ElectroLink porque las alertas locales e informes técnicos previenen la paralización imprevista de las cocinas en horas pico de venta.
+  **Sabremos que** esto es cierto **cuando veamos** una reducción del 50% en paradas no programadas por fallas eléctricas y una tasa de renovación de suscripciones del 85% por parte de las cadenas de comida rápida tras el periodo de prueba piloto.
+  
+- **Hipótesis 4: Sobre el Cumplimiento Normativo y Auditorías.**
+  **Creemos que** ofrecer un historial descargable de auditorías y eventos de seguridad facilitará el cumplimiento de las normativas de Seguridad y Salud en el Trabajo (SST).
+  **Sabremos que** hemos tenido éxito **cuando veamos** que el 90% de los administradores de tienda descarguen y presenten estos reportes en sus inspecciones internas y fiscalizaciones oficiales (SUNAFIL e INDECI).
+
 #### 1.2.2.4. Lean UX Canvas
 
 ## 1.3. Segmentos objetivo
