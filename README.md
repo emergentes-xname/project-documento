@@ -14,7 +14,7 @@
   Curso: Arquitecturas De Software Emergentes
   <br><br>
   Sección: 9056
-  <br><br>
+  <br><br>  
   Profesor: Enrique Alejandro Valdivia Verde
   <br><br>
   Informe del Trabajo Final
@@ -33,6 +33,7 @@
   </thead>
   <tbody>
     <tr><td style="border:1px solid #000; padding:6px 12px; text-align:center;">Cesar Augusto Arostegui Alzamora</td><td style="border:1px solid #000; padding:6px 12px; text-align:center;">u202114548</td></tr>
+    <tr><td style="border:1px solid #000; padding:6px 12px; text-align:center;">Vanessa May Lang Choy Robles</td><td style="border:1px solid #000; padding:6px 12px; text-align:center;">U202317450</td></tr>
     <tr><td style="border:1px solid #000; padding:6px 12px; text-align:center;">********************************</td><td style="border:1px solid #000; padding:6px 12px; text-align:center;">**********</td></tr>
   </tbody>
 </table>
@@ -229,11 +230,122 @@
 
 ## 3.1. To-Be Scenario Mapping
 
+### To-Be Scenario Map #1: Staff Operativo y de Limpieza (Operario de Cocina / Mantenimiento)
+* **Escenario:** Identificación rápida de fallas térmicas/fugas y realización segura de la limpieza de cocina.
+
+| Phases | Fase 1: Inicio de Turno y Monitoreo Preventivo | Fase 2: Detección y Alerta de Anomalía en Equipo | Fase 3: Reporte en 1-Clic vía QR | Fase 4: Limpieza y Mantenimiento Seguro |
+| :--- | :--- | :--- | :--- | :--- |
+| **Doing** | Revisa el indicador visual local/app de la estación antes de iniciar la operación. | Escucha la alerta sonora/visual del sensor en la freidora que detecta elevación anormal de corriente. | Escanea el código QR pegado en la máquina para enviar un reporte automático a gerencia. | Verifica en la app que la línea está desenergizada antes de proceder al baldeado/trapeado. |
+| **Thinking** | *"Es genial saber que no hay riesgos de fuga antes de conectar los hornos."* | *"La alerta me avisó antes de que la máquina sacara chispas o salte la llave general."* | *"No tengo que dejar la cocina sola para ir a buscar al administrador a reportar."* | *"Puedo limpiar tranquilamente con agua sin miedo a una descarga eléctrica."* |
+| **Feeling** | Tranquilo, enfocado, respaldado. | Alerta, precavido, informado en tiempo real. | Eficiente, satisfecho, empoderado. | Seguro, protegido, confiado. |
+
+---
+
+### To-Be Scenario Map #2: Manager del Local (Administrador / Jefe de Tienda)
+* **Escenario:** Monitoreo del consumo energético por máquina, recepción de alertas tempranas y gestión de mantenimiento preventivo.
+
+| Phases | Fase 1: Revisión del Dashboard Energético | Fase 2: Recepción de Alerta Preventiva IoT | Fase 3: Coordinación y Asignación de Técnico | Fase 4: Auditoría y Cierre de Incidencia |
+| :--- | :--- | :--- | :--- | :--- |
+| **Doing** | Revisa en el panel web/móvil la métrica de consumo por equipo y el estado de salud de tableros. | Recibe una notificación PUSH en la app sobre un pico de consumo anormal en la congeladora principal. | Asigna una orden de revisión preventiva desde la plataforma al proveedor certificado. | Valida la resolución técnica, revisa la factura digital y descarga el informe para SST/Sunafil. |
+| **Thinking** | *"Tengo el control de los costos de energía de todo el local en una sola pantalla."* | *"Menos mal el sensor lo detectó a tiempo; si fallaba en hora punta perdíamos la mercadería."* | *"Es rápido coordinar con un proveedor verificado sin perder tiempo en llamadas."* | *"Tengo todo el historial documentado en caso de una inspección de seguridad laboral."* |
+| **Feeling** | En control, seguro, estratégico. | Atento, respaldado por la automatización. | Eficiente, aliviado, productivo. | Cumplidor, satisfecho, tranquilo. |
+
+---
+
 ## 3.2. User Stories
 
+| Epic / User Story ID | Título | Descripción | Criterios de Aceptación (Gherkin) | Relacionado con (Epic ID) |
+| :--- | :--- | :--- | :--- | :--- |
+| **EP01** | **Gestión de Landing Page e Información Informativa** | Epic que agrupa la experiencia de navegación pública del sitio web. | N/A | N/A |
+| **EP02** | **Monitoreo IoT y Alertas de Seguridad en Tiempo Real** | Epic para la captura de mediciones energéticas y notificaciones del sistema. | N/A | N/A |
+| **EP03** | **Gestión de Incidencias y Mantenimiento Preventivo** | Epic que cubre la creación de reportes, asignación y seguimiento de reparaciones. | N/A | N/A |
+| **EP04** | **Gestión Multi-local, Analítica de Consumo y Reportes SST** | Epic para la administración de locales, indicadores financieros y auditorías. | N/A | N/A |
+| **EP05** | **Servicios Web, Integraciones API e Infraestructura (Technical)** | Epic que cubre el soporte backend, autenticación y comunicación IoT. | N/A | N/A |
+| **US01** | Visualización de propuesta de valor en Landing Page | Como visitante, deseo visualizar los beneficios de la solución IoT en el sitio web para comprender cómo previene riesgos eléctricos en restaurantes. | **Given** que un visitante ingresa a la página de inicio, **When** navega por la sección principal, **Then** el sistema muestra la propuesta de valor centrada en seguridad y ahorro energético. | EP01 |
+| **US02** | Calculadora de ahorro energético para Managers | Como visitante del segmento Manager, deseo ingresar el número de equipos del local para estimar el ahorro mensual proyectado. | **Given** que el visitante ingresa la cantidad de máquinas y costo actual de luz, **When** presiona el botón calcular, **Then** el sistema procesa el cálculo estimado de ahorro y lo muestra en pantalla. | EP01 |
+| **US03** | Formulario de solicitud de demo para cadenas | Como visitante del segmento Manager, deseo solicitar una demostración comercial ingresando mis datos de contacto. | **Given** que el usuario completa los campos obligatorios del formulario, **When** confirma el envío, **Then** el sistema valida los datos y registra la solicitud enviando una confirmación automática. | EP01 |
+| **US04** | Sección de testimonios y casos de éxito | Como visitante, deseo consultar testimonios de restaurantes que usan la plataforma para validar su efectividad. | **Given** que el visitante navega a la sección de casos de éxito, **When** selecciona un testimonio, **Then** el sistema despliega el detalle de la métrica de reducción de fallas lograda. | EP01 |
+| **US05** | Preguntas frecuentes sobre instalación IoT | Como visitante del segmento Staff Operativo, deseo leer las FAQ sobre seguridad de los sensores para despejar dudas sobre su uso. | **Given** que el visitante accede a la sección FAQ, **When** selecciona la categoría de instalación física, **Then** el sistema despliega las respuestas sobre certificaciones y protección contra agua. | EP01 |
+| **US06** | Visualización de planes de suscripción | Como visitante del segmento Manager, deseo comparar los planes de suscripción para elegir el que se adapte a mi número de locales. | **Given** que el visitante consulta la tabla de precios, **When** conmuta entre facturación mensual y anual, **Then** el sistema actualiza los precios y los límites de sensores por plan. | EP01 |
+| **US07** | Lectura de parámetros de corriente por sensor IoT | Como Manager del local, deseo visualizar el consumo de corriente en amperios por equipo para detectar sobrecargas en tiempo real. | **Given** que un sensor transmite datos de consumo, **When** el Manager consulta el estado del equipo, **Then** el sistema muestra el valor actual de amperaje y su nivel de normalidad. | EP02 |
+| **US08** | Detección automática de fuga a tierra | Como Staff Operativo, deseo que la plataforma identifique fugas a tierra para no tocar equipos en riesgo. | **Given** que el sensor detecta una corriente de fuga superior a 30mA, **When** ocurre el evento, **Then** el sistema cambia el estado del equipo a "Peligro" inmediatamente. | EP02 |
+| **US09** | Emisión de alerta PUSH por pico de energía | Como Manager del local, deseo recibir alertas instantáneas en el móvil cuando una máquina supere el umbral máximo de potencia. | **Given** que una freidora supera el límite de potencia configurado, **When** se detecta la anomalía, **Then** el sistema envía una notificación PUSH con el nombre del equipo y el pico registrado. | EP02 |
+| **US10** | Indicador visual de seguridad pre-limpieza | Como Staff Operativo, deseo consultar un indicador de semáforo (Verde/Rojo) de la zona de cocina para saber si es seguro iniciar el trapeado. | **Given** que el operario selecciona la zona de cocina, **When** la lectura de fugas es cero, **Then** el sistema muestra el indicador en estado "Seguro / Verde". | EP02 |
+| **US11** | Notificación de desconexión de sensor IoT | Como Manager del local, deseo ser notificado si un sensor pierde conectividad para garantizar el monitoreo continuo. | **Given** que un sensor deja de transmitir datos por más de 5 minutos, **When** transcurre la tolerancia, **Then** el sistema genera una alerta de "Dispositivo fuera de línea". | EP02 |
+| **US12** | Histórico de lecturas de temperatura en tableros | Como Manager del local, deseo revisar la temperatura histórica de los tableros eléctricos para prevenir sobrecalentamientos. | **Given** que existen lecturas registradas en las últimas 24 horas, **When** el usuario selecciona un tablero, **Then** el sistema despliega el gráfico con la fluctuación térmica. | EP02 |
+| **US13** | Reporte de anomalía mediante escaneo de código QR | Como Staff Operativo, deseo escanear el QR pegado en un equipo para reportar una falla eléctrica en menos de 10 segundos. | **Given** que el usuario escanea el código QR de una máquina, **When** selecciona el tipo de anomalía y confirma, **Then** el sistema crea un ticket de incidencia ligado a esa máquina. | EP03 |
+| **US14** | Asignación de orden de trabajo a técnico verificado | Como Manager del local, deseo asignar una orden de reparación a un técnico certificado registrado en la red. | **Given** que existe una incidencia reportada, **When** el Manager selecciona un técnico disponible y confirma, **Then** el sistema notifica al técnico y cambia el estado a "Asignado". | EP03 |
+| **US15** | Seguimiento en tiempo real de la llegada del técnico | Como Manager del local, deseo visualizar la estimación de tiempo de llegada del técnico para organizar la operación. | **Given** que una orden está en estado "En trayecto", **When** el Manager abre el detalle de la orden, **Then** el sistema despliega el tiempo estimado de arribo. | EP03 |
+| **US16** | Registro de diagnóstico y repuestos utilizados | Como Manager del local, deseo que el técnico registre el informe del trabajo realizado para mantener la bitácora técnica. | **Given** que el técnico finaliza la reparación, **When** ingresa el diagnóstico y repuestos consumidos, **Then** el sistema guarda la información y actualiza la hoja de vida del equipo. | EP03 |
+| **US17** | Cancelación o reprogramación de cita técnica | Como Manager del local, deseo reprogramar una visita técnica si ocurre un imprevisto en el restaurante. | **Given** una orden agendada, **When** el Manager modifica la fecha con al menos 2 horas de anticipación, **Then** el sistema actualiza la cita y notifica al proveedor. | EP03 |
+| **US18** | Evaluación del servicio de mantenimiento prestado | Como Manager del local, deseo calificar al técnico al finalizar la atención para asegurar la calidad de la red. | **Given** que una orden de trabajo ha sido completada, **When** el Manager asigna una puntuación de 1 a 5 estrellas y un comentario, **Then** el sistema registra la calificación. | EP03 |
+| **US19** | Cierre de incidencia con firma digital | Como Staff Operativo, deseo validar visualmente el funcionamiento del equipo y firmar la conformidad en la app. | **Given** que el trabajo concluyó, **When** el operario prueba el equipo y registra su firma digital, **Then** el sistema marca la incidencia como "Resuelta con conformidad". | EP03 |
+| **US20** | Tablero de control multi-local de consumo | Como Manager del local, deseo consolidar el gasto eléctrico de múltiples locales para comparar eficiencias operativas. | **Given** que el usuario administra más de una sede, **When** accede al dashboard consolidado, **Then** el sistema presenta el comparativo de KWh consumidos por local. | EP04 |
+| **US21** | Exportación de informes para auditorías SST / Sunafil | Como Manager del local, deseo exportar el registro de mantenimientos y revisiones eléctricas en formato PDF. | **Given** que el usuario selecciona un rango de fechas, **When** presiona exportar reporte SST, **Then** el sistema genera un archivo PDF normado listo para descarga. | EP04 |
+| **US22** | Configuración de presupuestos de energía mensuales | Como Manager del local, deseo establecer un límite de costo energético proyectado para recibir alertas antes de sobrepasarlo. | **Given** que se define un tope presupuestal en Soles, **When** el acumulado mensual alcanza el 80%, **Then** el sistema emite una alerta preventiva de presupuesto. | EP04 |
+| **US23** | Programación automática de mantenimientos preventivos | Como Manager del local, deseo programar alertas de mantenimiento según las horas de uso acumuladas de cada motor/máquina. | **Given** que un equipo alcanza 500 horas operativas registradas por el sensor, **When** se cumple el ciclo, **Then** el sistema genera automáticamente una sugerencia de mantenimiento. | EP04 |
+| **US24** | Registro y control de activos eléctricos por local | Como Manager del local, deseo dar de alta nuevos equipos asociando su ficha técnica y foto. | **Given** que el usuario completa el formulario de activo, **When** guarda los cambios, **Then** el sistema genera un identificador único y su código QR correspondiente. | EP04 |
+| **US25** | Generación de matriz de riesgos eléctricos por zona | Como Manager del local, deseo visualizar un mapa de calor del restaurante que identifique las áreas de mayor vulnerabilidad. | **Given** la acumulación de alertas en los últimos 30 días, **When** el usuario abre la matriz de riesgo, **Then** el sistema colorea en rojo las zonas con mayor índice de picos/fugas. | EP04 |
+| **US26** | Autenticación y control de accesos por roles (RBAC) | Como Developer, deseo implementar autenticación basada en tokens JWT para proteger las peticiones de los distintos roles. | **Given** credenciales de usuario válidas, **When** se invoca el endpoint POST /api/v1/auth/login, **Then** el servidor retorna un HTTP 200 OK con un JWT firmado conteniendo las claims de rol. | EP05 |
+| **US27** | Endpoint REST para ingesta de telemetría IoT | Como Developer, deseo exponer una API RESTful de alta concurrencia para la recepción de paquetes de datos de los sensores. | **Given** un payload JSON estructurado con datos de voltaje y corriente, **When** el sensor efectúa un POST a /api/v1/telemetry, **Then** la API responde HTTP 201 Created y persiste la lectura. | EP05 |
+| **US28** | Procesamiento de mensajería IoT mediante broker MQTT | Como Developer, deseo integrar un broker MQTT para la gestión eficiente de mensajes en tiempo real enviada por hardware. | **Given** un dispositivo IoT publicando en el tópico /sensores/lecturas, **When** se emite un mensaje, **Then** el suscriptor del backend procesa el payload en menos de 200 milisegundos. | EP05 |
+| **US29** | API REST de gestión de tickets de soporte | Como Developer, deseo proveer endpoints CRUD para la administración del ciclo de vida de los reportes de avería. | **Given** una solicitud HTTP GET a /api/v1/incidents con un token válido, **When** se procesa la consulta, **Then** la API responde HTTP 200 OK con el listado codificado en JSON. | EP05 |
+| **US30** | Servicio de notificaciones Push distribuido | Como Developer, deseo implementar un microservicio de notificaciones Push integrado con Firebase Cloud Messaging (FCM). | **Given** un evento de alerta crítica generado por el motor de reglas, **When** el servicio se ejecuta, **Then** despacha el mensaje a las instancias de la app registradas con HTTP 200 OK. | EP05 |
+| **US31** | Mecanismo de reintentos y buffering para desconexión IoT | Como Developer, deseo habilitar un buffer local en la pasarela de sensores para evitar pérdida de datos ante caídas de red. | **Given** que la conexión a internet del local se interrumpe, **When** los sensores generan lecturas, **Then** la pasarela almacena los datos localmente y los retransmite al restaurar el enlace. | EP05 |
+| **US32** | Encriptación de datos en tránsito y reposo | Como Developer, deseo aplicar cifrado TLS 1.3 en las comunicaciones y AES-256 en la base de datos para asegurar las métricas. | **Given** que se transmite información de telemetría o credenciales, **When** se inicia el canal de comunicación, **Then** el servidor exige el handshake TLS 1.3 denegando algoritmos obsoletos. | EP05 |
+| **US33** | Paginación y filtrado en endpoints de telemetría histórica | Como Developer, deseo implementar paginación basada en cursores para las consultas masivas de lecturas históricas. | **Given** una petición GET a /api/v1/telemetry/history con parámetros limit y cursor, **When** la API consulta la base de datos, **Then** devuelve un dataset optimizado HTTP 200 OK. | EP05 |
+| **US34** | API de pasarela de pagos para suscripciones | Como Developer, deseo integrar una pasarela de pagos mediante API REST para procesar el cobro recurrente de la plataforma. | **Given** un intento de cobro mensual a la tarjeta registrada, **When** la API externa procesa la transacción con éxito, **Then** el backend actualiza el estado de la suscripción a "Activa". | EP05 |
+| **US35** | Monitor de salud de la plataforma (Health Check Endpoint) | Como Developer, deseo contar con un endpoint de health check para monitorear la disponibilidad de la base de datos y servicios. | **Given** una petición GET a /api/v1/health, **When** todos los componentes dependientes están operativos, **Then** la API responde HTTP 200 OK con el estado "UP" de cada subsistema. | EP05 |
+
+---
+
+
 ## 3.3. Impact Mapping
+UXPRESSIA
+
+
 
 ## 3.4. Product Backlog
+
+| # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
+| :---: | :---: | :--- | :--- | :---: |
+| **1** | **US01** | Visualización de propuesta de valor en Landing Page | Como visitante, deseo visualizar los beneficios de la solución IoT en el sitio web para comprender cómo previene riesgos eléctricos en restaurantes. | **2** |
+| **2** | **US02** | Calculadora de ahorro energético para Managers | Como visitante del segmento Manager, deseo ingresar el número de equipos del local para estimar el ahorro mensual proyectado. | **3** |
+| **3** | **US03** | Formulario de solicitud de demo para cadenas | Como visitante del segmento Manager, deseo solicitar una demostración comercial ingresando mis datos de contacto. | **2** |
+| **4** | **US08** | Detección automática de fuga a tierra | Como Staff Operativo, deseo que la plataforma identifique fugas a tierra para no tocar equipos en riesgo. | **5** |
+| **5** | **US10** | Indicador visual de seguridad pre-limpieza | Como Staff Operativo, deseo consultar un indicador de semáforo (Verde/Rojo) de la zona de cocina para saber si es seguro iniciar el trapeado. | **3** |
+| **6** | **US09** | Emisión de alerta PUSH por pico de energía | Como Manager del local, deseo recibir alertas instantáneas en el móvil cuando una máquina supere el umbral máximo de potencia. | **5** |
+| **7** | **US13** | Reporte de anomalía mediante escaneo de código QR | Como Staff Operativo, deseo escanear el QR pegado en un equipo para reportar una falla eléctrica en menos de 10 segundos. | **3** |
+| **8** | **US07** | Lectura de parámetros de corriente por sensor IoT | Como Manager del local, deseo visualizar el consumo de corriente en amperios por equipo para detectar sobrecargas en tiempo real. | **5** |
+| **9** | **US14** | Asignación de orden de trabajo a técnico verificado | Como Manager del local, deseo asignar una orden de reparación a un técnico certificado registrado en la red. | **5** |
+| **10** | **US06** | Visualización de planes de suscripción | Como visitante del segmento Manager, deseo comparar los planes de suscripción para elegir el que se adapte a mi número de locales. | **2** |
+| **11** | **US04** | Sección de testimonios y casos de éxito | Como visitante, deseo consultar testimonios de restaurantes que usan la plataforma para validar su efectividad. | **1** |
+| **12** | **US05** | Preguntas frecuentes sobre instalación IoT | Como visitante del segmento Staff Operativo, deseo leer las FAQ sobre seguridad de los sensores para despejar dudas sobre su uso. | **1** |
+| **13** | **US20** | Tablero de control multi-local de consumo | Como Manager del local, deseo consolidar el gasto eléctrico de múltiples locales para comparar eficiencias operativas. | **8** |
+| **14** | **US21** | Exportación de informes para auditorías SST / Sunafil | Como Manager del local, deseo exportar el registro de mantenimientos y revisiones eléctricas en formato PDF. | **5** |
+| **15** | **US15** | Seguimiento en tiempo real de la llegada del técnico | Como Manager del local, deseo visualizar la estimación de tiempo de llegada del técnico para organizar la operación. | **5** |
+| **16** | **US16** | Registro de diagnóstico y repuestos utilizados | Como Manager del local, deseo que el técnico registre el informe del trabajo realizado para mantener la bitácora técnica. | **3** |
+| **17** | **US23** | Programación automática de mantenimientos preventivos | Como Manager del local, deseo programar alertas de mantenimiento según las horas de uso acumuladas de cada motor/máquina. | **5** |
+| **18** | **US22** | Configuración de presupuestos de energía mensuales | Como Manager del local, deseo establecer un límite de costo energético proyectado para recibir alertas antes de sobrepasarlo. | **3** |
+| **19** | **US24** | Registro y control de activos eléctricos por local | Como Manager del local, deseo dar de alta nuevos equipos asociando su ficha técnica y foto. | **3** |
+| **20** | **US25** | Generación de matriz de riesgos eléctricos por zona | Como Manager del local, deseo visualizar un mapa de calor del restaurante que identifique las áreas de mayor vulnerabilidad. | **8** |
+| **21** | **US11** | Notificación de desconexión de sensor IoT | Como Manager del local, deseo ser notificado si un sensor pierde conectividad para garantizar el monitoreo continuo. | **3** |
+| **22** | **US12** | Histórico de lecturas de temperatura en tableros | Como Manager del local, deseo revisar la temperatura histórica de los tableros eléctricos para prevenir sobrecalentamientos. | **3** |
+| **23** | **US17** | Cancelación o reprogramación de cita técnica | Como Manager del local, deseo reprogramar una visita técnica si ocurre un imprevisto en el restaurante. | **2** |
+| **24** | **US18** | Evaluación del servicio de mantenimiento prestado | Como Manager del local, deseo calificar al técnico al finalizar la atención para asegurar la calidad de la red. | **2** |
+| **25** | **US19** | Cierre de incidencia con firma digital | Como Staff Operativo, deseo validar visualmente el funcionamiento del equipo y firmar la conformidad en la app. | **3** |
+| **26** | **US26** | Autenticación y control de accesos por roles (RBAC) | Como Developer, deseo implementar autenticación basada en tokens JWT para proteger las peticiones de los distintos roles. | **3** |
+| **27** | **US27** | Endpoint REST para ingesta de telemetría IoT | Como Developer, deseo exponer una API RESTful de alta concurrencia para la recepción de paquetes de datos de los sensores. | **5** |
+| **28** | **US28** | Procesamiento de mensajería IoT mediante broker MQTT | Como Developer, deseo integrar un broker MQTT para la gestión eficiente de mensajes en tiempo real enviada por hardware. | **8** |
+| **29** | **US29** | API REST de gestión de tickets de soporte | Como Developer, deseo proveer endpoints CRUD para la administración del ciclo de vida de los reportes de avería. | **3** |
+| **30** | **US30** | Servicio de notificaciones Push distribuido | Como Developer, deseo implementar un microservicio de notificaciones Push integrado con Firebase Cloud Messaging (FCM). | **5** |
+| **31** | **US31** | Mecanismo de reintentos y buffering para desconexión IoT | Como Developer, deseo habilitar un buffer local en la pasarela de sensores para evitar pérdida de datos ante caídas de red. | **5** |
+| **32** | **US32** | Encriptación de datos en tránsito y reposo | Como Developer, deseo aplicar cifrado TLS 1.3 en las comunicaciones y AES-256 en la base de datos para asegurar las métricas. | **3** |
+| **33** | **US33** | Paginación y filtrado en endpoints de telemetría histórica | Como Developer, deseo implementar paginación basada en cursores para las consultas masivas de lecturas históricas. | **3** |
+| **34** | **US34** | API de pasarela de pagos para suscripciones | Como Developer, deseo integrar una pasarela de pagos mediante API REST para procesar el cobro recurrente de la plataforma. | **5** |
+| **35** | **US35** | Monitor de salud de la plataforma (Health Check Endpoint) | Como Developer, deseo contar con un endpoint de health check para monitorear la disponibilidad de la base de datos y servicios. | **1** |
+
+---
 
 # Capítulo IV: Strategic-Level Software Design
 
