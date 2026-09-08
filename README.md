@@ -229,10 +229,77 @@ Para definir de forma estructurada el problema planteado, se aplica la técnica 
 **Initial Segment:** Cadenas de comida rápida en Lima Metropolitana con más de 5 locales operativos.
 
 **Declaración del Problema (Problem Statement):**
-El servicio de monitoreo de infraestructura en las cadenas de comida rápida en Lima Metropolitana está pensado para atender fallas eléctricas de forma reactiva. Hemos detectado que la falta de supervisión continua e inteligente impide a los administradores anticiparse a fallas en equipos de cocina y fugas de energía, lo cual expone al personal a riesgos de electrocución y genera gastos innecesarios. 
+
+El servicio de monitoreo de infraestructura en las cadenas de comida rápida en Lima Metropolitana está pensado para atender fallas eléctricas de forma reactiva. Hemos detectado que la falta de supervisión continua e inteligente impide a los administradores anticiparse a fallas en equipos de cocina y fugas de energía, lo cual expone al personal a riesgos de electrocución y genera gastos innecesarios.
+
 *¿Cómo podríamos proporcionar una herramienta de monitoreo IoT en tiempo real que prevenga accidentes laborales, optimice el consumo energético y garantice la continuidad operacional en las tiendas de comida rápida de Lima Metropolitana?*
 
 #### 1.2.2.2. Lean UX Assumptions
+
+**Business Outcomes** 
+
+- **Creemos que nuestros usuarios necesitan una solución que les permita** monitorear la salud de su red eléctrica y consumo de maquinaria pesada de cocina en tiempo real, previniendo accidentes laborales (fugas a tierra/electrocución) y fallas críticas antes de que ocurran, ya que actualmente solo reaccionan cuando el equipo se avería o inspeccionan manualmente.
+  
+- **Estas necesidades se pueden resolver mediante** el desarrollo de una plataforma IoT compuesta por sensores integrados a tableros/maquinaria en cocina, alertas audibles/visibles inmediatas en tienda y un dashboard analítico centralizado para la gestión operativa.
+  
+- **Nuestros clientes iniciales son** gerentes de operaciones, administradores de tienda y Jefes de Seguridad y Salud en el Trabajo (SST) de cadenas y franquicias de comida rápida en Lima Metropolitana con más de 5 locales operativos.
+  
+- **El valor #1 que los clientes quieren de nuestro servicio es** garantizar la seguridad de su personal operativo evitando fatalidades por descargas eléctricas y previniendo la paralización de la cocina en horas de alto flujo de ventas.
+  
+- **El cliente también puede obtener estos beneficios adicionales** como reducción en la facturación eléctrica mensual por corrección de ineficiencias de red, cumplimiento normativo ante fiscalizaciones (SUNAFIL, OSINERGMIN) y prolongación de la vida útil de sus equipos industriales.
+  
+- **Vamos a adquirir la mayoría de los clientes a través de** venta directa B2B a casas matrices de franquicias gastronómicas, alianzas con la Sociedad Nacional de Industrias (sector restaurantes) y demostraciones en vivo del ahorro energético y mitigación de riesgos.
+  
+- **Haremos dinero a través de** un modelo de suscripción Software as a Service (SaaS) mensual por local monitoreado, sumado al costo de venta/instalación de los kits de sensores IoT.
+  
+- **Nuestra competencia de mercado serán** empresas tradicionales de mantenimiento eléctrico correctivo/preventivo y sistemas genéricos de gestión de instalaciones (facility management) que no ofrecen alertas IoT en tiempo real focalizadas en cocina.
+  
+- **Los venceremos debido a** nuestra especializada arquitectura IoT preventiva centrada en la seguridad del trabajador en cocina, alertas inmediatas para personal no técnico y analítica de consumo por máquina en una sola plataforma integrada.
+  
+- **Nuestro mayor riesgo de producto es** que las cadenas perciban la instalación de los sensores como una interrupción en su operación o duden de la precisión del sistema frente a entornos de grasa/calor extremo en cocina.
+  
+- **Resolveremos esto a través de** pruebas piloto gratuitas en cocinas de prueba, sensores con protección industrial adecuados para gastronomía y demostraciones cuantificables del retorno de inversión por prevención de fallas.
+  
+- **Qué otras suposiciones tenemos que, de probarse falsas, pueden causar que nuestro proyecto fracase:**
+  - Creemos que los administradores de comida rápida priorizarán la prevención de riesgos y la eficiencia energética sobre la compra de mantenimiento correctivo tradicional.
+  - Creemos que los operarios de cocina acatarán las alertas del sistema y detendrán el uso de una máquina si se reporta una anomalía o fuga de corriente.
+  - Creemos que la instalación del hardware IoT en los tableros eléctricos no interferirá con la continuidad del servicio del restaurante.
+
+**User Outcomes** 
+
+- **¿Quién será el usuario?**
+  - **Usuarios administradores:** Gerentes de Operaciones, Jefes de SST y Administradores de Local de comida rápida.
+  - **Usuarios operativos:** Personal de cocina, cajeros y brigadistas de seguridad en tienda.
+    
+- **¿Dónde encaja nuestro producto en su trabajo o vida?**
+  - Para los **administradores**, se integra en la supervisión técnica remota de la red de tiendas, permitiéndoles auditar consumos, planificar mantenimientos y mitigar riesgos legales.
+  - Para los **operarios de cocina**, se integra en su rutina diaria de preparación de alimentos como un guardián de seguridad que les notifica en pantalla o mediante alertas locales si un equipo representa un peligro inminente.
+    
+- **¿Qué problemas busca resolver nuestro producto?**
+  - Invisibilidad de fallas invisibles y fugas a tierra en maquinaria pesada de cocina.
+  - Alto riesgo de electrocución o accidentes fatales del personal de cocina.
+  - Costos excesivos en la factura de luz por equipos ineficientes o sobrecargados.
+  - Pérdida de ventas por apagones locales o averías en horas de mayor demanda.
+
+- **¿Cuándo y cómo es usado nuestro producto?**
+  - **Cuándo:**
+    - De forma ininterrumpida (24/7) en segundo plano para la captura de datos de red.
+    - Al instante de detectar un sobrevoltaje, fuga de energía o sobrecalentamiento.
+    - Durante las revisiones semanales de gestión de costos de la administración.
+  - **Cómo:**
+    - A través del Dashboard Web de analítica para la administración centralizada.
+    - Mediante notificaciones push, SMS y señalizadores locales en la cocina ante emergencias.
+      
+- **¿Qué características son importantes?**
+  - Monitoreo en tiempo real del voltaje, amperaje y temperatura de equipos clave.
+  - Módulo de alerta temprana de fugas de corriente con protocolo de apagado seguro.
+  - Dashboard de consumo energético con desglose de costos aproximados por máquina.
+  - Historial de eventos y reporte de salud técnica para fiscalizaciones de seguridad.
+  
+- **¿Cómo debe comportarse y verse nuestro producto?**
+  - **Interfaz administrativa:** Visualización de métricas clara, ejecutiva y enfocada en indicadores de riesgo y costo.
+  - **Interfaz operativa/tienda:** Interfaz extremadamente simple, con códigos de colores intuitivos (Verde/Amarillo/Rojo) e instructivos de acción rápida ante emergencias.
+  - **Comportamiento:** Respuesta inmediata (latencia mínima) en el envío de alertas críticas para prevenir riesgos de electrocución.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
