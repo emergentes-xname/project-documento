@@ -239,6 +239,8 @@
 
 ## 4.1. Strategic-Level Attribute-Driven Design
 
+En esta sección se presenta el proceso de diseño arquitectónico de ElectroLink abordando la definición de la arquitectura desde una perspectiva estratégica y orientada tanto a los atributos de calidad como al dominio del negocio.
+
 ### 4.1.1. Design Purpose
 
 ### 4.1.2. Attribute-Driven Design Inputs
