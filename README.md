@@ -265,6 +265,10 @@ Los principales propósitos que orientan el diseño de la solución son:
 
 ### 4.1.2. Attribute-Driven Design Inputs
 
+En esta sección se presentan los tres tipos principales de entradas consideradas para el proceso de diseño: la funcionalidad primaria, representada mediante las historias de usuario más relevantes para la operación del sistema; los escenarios de atributos de calidad, que permiten establecer expectativas medibles relacionadas con aspectos como disponibilidad, rendimiento, seguridad, confiabilidad y escalabilidad; y las restricciones, que delimitan las decisiones arquitectónicas debido a condiciones tecnológicas, operativas o de negocio.
+
+Estas entradas servirán posteriormente como base para la identificación y priorización de los drivers arquitectónicos, así como para la definición de las decisiones de diseño que estructurarán la arquitectura de ElectroLink.
+
 #### 4.1.2.1. Primary Functionality (Primary User Stories)
 
 #### 4.1.2.2. Quality Attribute Scenarios
