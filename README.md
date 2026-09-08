@@ -243,6 +243,26 @@ En esta sección se presenta el proceso de diseño arquitectónico de ElectroLin
 
 ### 4.1.1. Design Purpose
 
+El propósito del proceso de diseño de ElectroLink es definir una arquitectura de software que permita soportar de manera confiable, escalable y mantenible el monitoreo continuo de los componentes eléctricos presentes en establecimientos de cadenas de comida rápida. La solución busca responder a la problemática asociada con la detección tardía de anomalías eléctricas, posibles fugas de corriente, sobrecargas, fallas de funcionamiento y consumos energéticos ineficientes, situaciones que pueden generar interrupciones operativas, riesgos de seguridad y mayores costos de mantenimiento.
+
+Los principales propósitos que orientan el diseño de la solución son:
+
+- **Facilitar el monitoreo continuo del estado eléctrico de los establecimientos:** ElectroLink debe permitir visualizar de manera centralizada las mediciones obtenidas por los dispositivos IoT instalados en los diferentes componentes y equipos eléctricos de cada local. Esto permitirá a los responsables de mantenimiento y operaciones conocer el estado de los activos eléctricos sin necesidad de realizar inspecciones constantes de manera presencial.
+
+- **Detectar oportunamente anomalías y posibles fallas eléctricas:** La solución deberá analizar las mediciones obtenidas por los dispositivos IoT para identificar comportamientos fuera de los rangos esperados, tales como consumos anómalos, sobrecargas, variaciones de voltaje, temperaturas elevadas o posibles fugas de corriente. Ante estas situaciones, el sistema deberá generar alertas que permitan al personal responsable actuar antes de que una anomalía pueda convertirse en una falla crítica.
+
+- **Reducir interrupciones operativas y costos de mantenimiento:** El acceso a información histórica y en tiempo real permitirá identificar tendencias y comportamientos anormales en los equipos eléctricos, facilitando la ejecución de mantenimiento preventivo y reduciendo la dependencia de intervenciones correctivas posteriores a una falla. De esta manera, la solución busca disminuir tiempos de inactividad y costos asociados a reparaciones inesperadas.
+
+- **Optimizar el consumo energético de los establecimientos:** ElectroLink deberá proporcionar información sobre el consumo eléctrico de los equipos y componentes monitoreados, permitiendo identificar patrones de uso ineficientes o consumos fuera de los valores habituales. Esta información podrá ser utilizada por los responsables de operaciones para tomar decisiones orientadas a mejorar la eficiencia energética de los establecimientos.
+
+- **Atender las necesidades de los principales segmentos de usuario:**
+    - **Responsables de mantenimiento:** requieren identificar rápidamente anomalías, consultar el historial de mediciones y recibir alertas que permitan priorizar las actividades de mantenimiento.
+    - **Responsables de operaciones:** necesitan conocer el estado general de los implementos eléctricos registrados por cada establecimiento y detectar situaciones que puedan afectar la continuidad de las operaciones.
+    - **Administradores o responsables de la cadena:** requieren disponer de información consolidada sobre distintos locales para analizar consumo energético, incidencias y desempeño operativo.
+
+- **Asegurar un monitoreo confiable y oportuno:** Debido a que la solución dependerá de dispositivos IoT y comunicación continua con la plataforma, el diseño arquitectónico deberá considerar atributos de calidad relacionados con disponibilidad, confiabilidad, rendimiento, seguridad y escalabilidad. La información crítica deberá ser transmitida y procesada oportunamente, mientras que la plataforma deberá ser capaz de soportar el incremento progresivo de establecimientos, dispositivos y mediciones sin comprometer la operación del sistema.
+
+
 ### 4.1.2. Attribute-Driven Design Inputs
 
 #### 4.1.2.1. Primary Functionality (Primary User Stories)
