@@ -297,8 +297,7 @@
 
 ## 3.3. Impact Mapping
 
-[ImpactMapping](assets/cap3/ImpactMapping.png) 
-
+![ImpactMapping](assets/cap3/ImpactMapping.png) 
 
 ## 3.4. Product Backlog
 
