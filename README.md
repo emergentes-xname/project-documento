@@ -321,6 +321,9 @@ El servicio de monitoreo de infraestructura en las cadenas de comida rápida en 
 
 #### 1.2.2.4. Lean UX Canvas
 
+![Lean-UX-Canvas](assets/cap1/lean-ux-canvas.png)
+
+
 ## 1.3. Segmentos objetivo
 
 **Segmento objetivo #1: Trabajadores del Local (Staff Operativo y de Limpieza)**
