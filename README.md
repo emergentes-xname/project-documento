@@ -296,8 +296,8 @@
 ---
 
 ## 3.3. Impact Mapping
-UXPRESSIA
 
+[ImpactMapping](assets/cap3/ImpactMapping.png) 
 
 
 ## 3.4. Product Backlog
